@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+.header {
+    height: 12vh;
+    border-bottom: 1px solid rgb(230, 215, 215);
+}
+
+.header-container {
+    max-width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container .logo {
+    color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-container .botao {
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 80vh;
+}
+
+.main-container {
+    max-width: 420px;
+    margin: 0px auto;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.main .passos {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.main .planos {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.main .texto {
+    font-size: 18px; 
+    max-width: 340px;
+    line-height: 24px;
+}
+
+.main-container .login input {
+    width: 100%;
+    margin: 5px 0;
+    line-height: 55px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.main .check {
+    display: inline-flex;
+    margin-top: 7px;
+    gap: 7px;
+}
+
+.main .check input {
+    width: 25px;
+    height: 25px;
+}
+
+.main-container button {
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main-container button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-container button:hover {
+    background: rgb(218, 10, 10);
+    transition: 0.3 ease-in-out;
+}
+
+.footer {
+    height: 28vh;
+    background: rgb(197, 191, 191);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.footer-container .text {
+    color: grey;
+    padding: 30px 0;
+}
+
+.footer-container .text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-container .text a:hover {
+    text-decoration: underline;
+}
+
+.footer-container .lista-footer {
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container .lista-footer li {
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.footer-container .lista-footer li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+}
+
+.footer-container .lista-footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-container .language select {
+    margin: 8px 0;
+    background-color: #fff;
+    color: grey;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.footer-container .language select:active {
+    border-color: black;
+}

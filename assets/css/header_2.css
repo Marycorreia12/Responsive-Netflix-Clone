@@ -1,0 +1,94 @@
+@font-face {
+    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    font-family: 'Netflix Sans';
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+img{
+    width: 100%;
+}
+
+body, html {
+    font-family: 'Netflix Sans';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.header {
+    background: #000;
+}
+
+.header-container{
+    min-height: 8vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.header-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+ .header-1 #h1 img{
+     width: 90px;
+ }
+
+ .header-1::after {
+     position: absolute;
+     content: '';
+     width: .5px;
+     height: 24px;
+     background-color: white;
+     top: 0;
+     left: 36%;
+ }
+
+ .header-1 #h2 {
+     font-size: 18px;
+     font-weight: 400;
+ } 
+
+ .header-2 .btn  {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 8px;   
+    font-weight: 700; 
+    font-size: 12px;
+    text-transform: uppercase;
+ }
+
+ .header-2 #h3:hover {
+     background: #f0e9e9;
+     color: #5e5b5b;
+ }
+
+ .header-2 #h4 {
+    background: #D6000F;
+    border: none;
+    margin-left: 10px;
+}

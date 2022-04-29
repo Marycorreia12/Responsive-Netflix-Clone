@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {
+    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    font-family: 'Netflix Sans';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body, html {
+    font-family: Arial,sans-serif;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    font-family: 'Netflix Sans';
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background: url('/assets/img/assitencia.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 28vh;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+ .header-container #logo img {
+     width: 130px;
+ }
+
+ .header-container .btn {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 8px;   
+    font-weight: 700; 
+    font-size: 12px;
+    text-transform: uppercase;
+ }
+
+ .header-container #h2:hover {
+     background: #f0e9e9;
+     color: #5e5b5b;
+     transition: 0.2 ease-in-out;
+ }
+
+ .header-container #h3 {
+    background: #ff0000;
+    border: none;
+    margin-left: 10px;
+}
+
+.header-search {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.header-search h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header-search .input {
+    position: relative;
+}
+
+.header-search .input .btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+.header-search .input input {
+    padding-left: 50px;
+    width: 100%;
+    line-height: 50px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    cursor: default;
+    font-size: 16px;
+}
+
+.main-main {
+    background: #f8f8f8;
+    border-bottom: 1px solid #dfd9d9;
+    height: auto;
+}
+
+.main {
+    max-width: 1300px;
+    margin: 0px auto;
+    padding: 35px 0 20px 0;
+}
+
+.main-1 h2 {
+    padding-bottom: 35px;
+}
+
+.main-1 .botoes a {
+    border: 1px solid red;
+    border-radius: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.main-1 .botoes #a1 {
+    background: #ff0000;
+    color: white;
+}
+
+.main-1 .botoes #a2 {
+    color: #ff0000;
+    margin-left: 12px;
+}
+
+.main-1 .botoes #a2:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+.main-2 h3 {
+    font-size: 17px;
+    color: #808080;
+    font-weight: 100;
+    margin: 50px 0 20px 0;
+}
+
+.main-2 .lista {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 900px;
+}
+
+.main-2 .lista li {
+    display: inline-flex;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #fff;
+    margin-right: 10px;
+    box-shadow: 2px 2px 5px 0px #000;
+}
+
+.main-2 .lista li a {
+    text-decoration: none;
+    color: #4c4948;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.main-2 .lista li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.section {
+    display: flex;
+    gap: 50px;
+}
+
+.section .lista-1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.section h2{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.section ol {
+    list-style: none;
+}
+
+.section ol li {
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+.section .lista-2 .category ol li {
+    max-width: 220px;
+    padding-bottom: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .lista-2 .category ol li::after {
+    content: '>';
+    color: #ff0000;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.section .lista-1 .category ol li a, .section .lista-2 .category ol li a {
+    text-decoration: none;
+    color: #756f6f;
+    font-weight: 300;
+}
+
+.section .lista-1 .category ol li a:hover, .section .lista-2 .category ol li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.footer_1 {
+    background: #dddad5;
+}
+
+.footer-1-container {
+    min-height: 13vh;
+}
+
+.footer-1-container .botoes_footer .btn {
+    line-height: 45px;
+    padding: 0 15px;
+    color: #636161;
+    background: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #5f5f5f;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+.footer-1-container .botoes_footer .btn:hover {
+    background: #dddad5;
+    transition: 0.2s ease-in-out;
+}

@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: Arial,sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    position: relative;
+    background-image: url('../img/netflix.jpg');
+    height: 100vh;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+
+.main-header #h1 img{
+    width: 100px;
+}
+
+.main-header .btn  {
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 8px 16px;   
+    font-weight: 700; 
+    font-size: 12px;
+    text-transform: uppercase;
+ }
+
+ .main-header #h4 {
+    background: #D6000F;
+    border: none;
+    margin-left: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    padding: 0 35px;
+} 
+
+h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 35px;}
+
+form {
+    display: flex;
+    flex-flow: column;
+    max-width: 600px;
+    padding: 10px 35px;
+}
+
+.input-group{
+    position: relative;
+}
+
+form input {
+    width: 50%;
+    height: 50px;
+    border-radius: 3px;
+    background: black;
+    border: 1px solid gray;
+    color: gray;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+form label{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form input:focus{
+    background: #333333;
+}
+
+form input:focus ~ label,
+form input:not(:placeholder-shown) ~ label {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #797979;
+    font-size: 13px;
+    transition: all 200ms ease-in-out;
+}
+
+form input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: gray;
+}
+
+.button1, .button2 {
+    max-width: 400px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+}
+
+.button1 {
+    background: red;
+    color: white;
+    width: 25%;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.button2 {
+    background: rgb(82, 80, 80);
+    color: white;
+    width: 55%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.texto {
+    max-width: 400px;
+    padding: 45px 35px;  
+}
+
+.texto p {
+    padding-bottom: 20px;
+}
+
+.texto p a {
+    text-decoration: none;
+    color: rgb(172, 165, 165);
+}
+
+.texto span {
+    color: rgb(172, 165, 165);
+    font-size: 14px;
+}
+
+.texto span a {
+    color: rgb(19, 19, 212);
+}
+ .footer{
+     border-top: none;
+ }

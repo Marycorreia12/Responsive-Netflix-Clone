@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@font-face {
+    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    font-family: 'Netflix Sans';
+}
+
+h1 { 
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.header-link{
+    color: #D6000F;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.header-link i{
+    margin-right: 10px;
+}
+
+.header-print{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-flex;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.header-print:hover{
+    background-color: #f0ede7;
+    transition: 1s ease-in-out;
+}
+
+.main-container {
+    max-width: 1220px;
+    margin: 30px auto 100px auto;
+}
+
+.main-container-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.main-container-paragrafos {
+    margin: 30px 0;
+}
+
+ p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 16px;
+ }
+
+.footer {
+    background-color: black;
+    min-height: 35vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.footer-container select {
+    padding: 10px 30px;
+    color: gray;
+    background: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.footer-container select:hover {
+    background: grey;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-container select option {
+    background: white;
+    color: black;
+}
+
+.footer-container .lista-footer-container {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.footer-container .lista-footer-container li a {
+    color: grey;
+    font-size: 14px;
+}
+
+.footer-container .lista-footer-container li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Netflix</title>
+</head>
+<body>
+
+    <div class="main">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/assets/img/LogoNetflix.png" alt="">
+        </a>
+      </div>
+      <div class="login">
+          <h1>Iniciar sessão</h1>
+          <form id="form-2" class="form formValidator" action="/assets/link/help.html">
+             <div class="input-group">
+              <input type="email" id="email"  class="input-text" placeholder="E-mail ou número de telefone">
+              <label for="email">E-mail ou número de telefone</label>
+              <small class="error"></small>
+             </div>
+             <div class="input-group">
+              <input type="password" id="pass" class="input-text" placeholder="Palavra-passe">
+              <label for="pass">Palavra-passe</label>
+              <small class="error"></small>
+             </div>
+              
+              <button type="submit" class="btn-2">Iniciar Sessão
+              </button>
+          </form>
+
+          <div class="input-group-text">
+            <div class="forgot">
+              <div class="lembrar">
+                <input type="checkbox" id="check" name="check" checked>
+                <label for="check">Memorizar os meus dados</label>
+              </div>
+              <div class="ajuda">
+                <a href="/assets/link/loginHelp.html">Precisa de ajuda?</a>
+              </div>
+            </div>
+            
+            <div class="facebook">
+                <a href="#"><img src="/assets/img/facebook.png">Iniciar sessão com o Facebook</a>           
+            </div>
+            
+            <div class="registro"> 
+              <span>É o seu primeiro acesso à Netflix?<a href="/index.html">Registe-se agora.</a></span>
+            </div>
+            <div class="saiba-mais">
+              <span>Esta página está protegida pelo serviço Google reCAPTCHA para garantir que não se trata de um robô.<a href="#"> Mais informações.</a></span>
+            </div>
+          </div>
+      </div>
+      
+      <div class="footer">
+        <div class="footer-menu"> 
+          <div class="text">
+              <p>Perguntas? Ligue <a href="#">800 827 777</a></p>
+          </div>
+
+          <div class="lista-footer">
+            <ul>
+              <li><a href="/assets/link/perguntas.html">Perguntas frequentes</a></li>
+              <li><a href="#">Preferências de Cookies</a></li>
+            </ul>
+            <ul>
+              <li><a href="/assets/link/help.html">Centro de Assistência</a></li>
+              <li><a href="/assets/link/corpinfo.html">Informaçoes sobre e a Empresa</a></li>
+            </ul>
+            <ul>
+              <li><a href="/assets/link/termsofuse.html">Termos de Utilização</a></li>
+            </ul>
+            <ul>
+              <li><a href="/assets/link/termsofuse.html">Privacidade</a></li>
+            </ul>
+          </div>
+
+          <div class="nav_buttons">
+            <select id="selected">
+                <option>Português</option>
+                <option>English</option>
+            </select>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-sort-down"></i>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="/assets/js/login.js"></script>
+    
+</body>
+</html>

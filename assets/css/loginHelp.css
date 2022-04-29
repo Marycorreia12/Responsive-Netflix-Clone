@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #333;
+}
+
+.main-header {
+    position: relative;
+    background-image: url('../img/login-the-crown_2-1500x1000.jpg');
+    height: 100vh;
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container .logo {
+    width: 180px;
+ }
+
+.nav-container .link a {
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}
+
+.nav-container .link a:hover {
+    text-decoration: underline;
+}
+
+.form {
+    position: absolute;
+    background: white;
+    width: 450px;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form .text-1 {
+    font-size: 15.5px;
+    margin-top: 20px;
+    padding-top: 5px;
+    color: rgba(196, 190, 190, 0.904);
+}
+
+.form .text-1 a {
+    color: inherit;
+}
+
+.form span {
+    display: none;
+}
+
+.form .text-1 a:hover {
+color: white;
+}
+
+.form .text-1 a:active ~ span {
+    display: block;
+}
+
+.form-container {
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.form-container h1, p {
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.form-container .radio-button {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.form-container .radio-button input {
+    width: 25px;
+    height: 25px;
+}
+
+.form-container .email-box {
+    padding: 20px 0 30px 0;
+}
+
+.form-container .email-box input {
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15px;
+    outline: none;
+    border: none;
+    border: 1PX solid gray;
+    border-radius: 3px;
+}
+
+.form-container .email-box input::placeholder {
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    background: rgb(0, 140, 255);
+    border: none;
+    margin-bottom: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+     background: rgb(3, 130, 233);
+}
+
+.form-container a {
+    text-decoration: none;
+    color:rgb(0, 140, 255);;
+}
+
+.form-container a:hover {
+    text-decoration: underline;
+}
+
+.texto {
+    color:grey;
+}
+
+.footer {
+    background: rgb(0,0,0);
+}
+
+.footer-menu {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+  
+}
+
+.footer-menu .text {
+    color: rgb(167, 158, 158);
+    margin-bottom: 30px;
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+.footer-menu .text a {
+    font-size: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-menu .text a:hover {
+    text-decoration: underline;
+}
+
+.footer .lista-footer {
+    color:  #737373;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.footer .lista-footer li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.footer .lista-footer li a {
+    color: rgb(167, 158, 158);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer .lista-footer li a:hover {
+    text-decoration: underline;
+}
+
+.footer-menu .language select {
+    background-color: black;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 15px 25px;
+}
+
+.footer-menu .language {
+    padding: 20px 0 50px 0;
+}
+
