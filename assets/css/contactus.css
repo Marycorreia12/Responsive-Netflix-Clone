@@ -1,6 +1,15 @@
+@font-face {
+    src: url('../Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('../Netflix_fonts/NetflixSans-Light.otf');
+    src: url('../Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('../Netflix_fonts/NetflixSans-Regular.otf');
+    font-family: 'Netflix Sans';
+}
+
 .back-container{
     max-width: 1220px;
     margin: 30px auto;
+    padding: 0 2rem;
 }
 .header-link{
     color: #D6000F;
@@ -22,6 +31,7 @@ span {
     max-width: 1220px;
     margin: 30px auto;
     gap: 30px;
+    padding: 0 2rem;
 }
 
 p { 
@@ -156,6 +166,12 @@ input {
     width: 350px;
 }
 
+@media(max-width: 900px){
+    .right-pane{
+        display: none;
+    }
+
+}
 
 
 

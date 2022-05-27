@@ -16,7 +16,7 @@ a {
 
 .main {
     position: relative;
-    background-image: url('../img/netflix.jpg');
+    background-image: url('../../images/netflix.jpg');
     background-position: center;
     min-height: 150vh;
     width: 100%;

@@ -12,6 +12,7 @@ body {
 .header {
     height: 12vh;
     border-bottom: 1px solid rgb(230, 215, 215);
+    padding: 0 2rem;
 }
 
 .header-container {
@@ -23,27 +24,28 @@ body {
     padding-top: 20px;
 }
 
-.header-container a {
-    text-decoration: none;
+.header-container #logo {
+    width: 180px;
 }
 
-.header-container .logo {
-    color: red;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
+.header-container #logo img{
+    width: 100%;
 }
+
 
 .header-container .botao {
     font-size: 18px;
-    color: black;
+    color: #D6000F;
     font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 .main {
     max-width: 1000px;  
     margin: 0px auto;
     min-height: 100vh;
+    padding: 0 2rem;
 }
 .main-container {
     max-width: 400px;  
@@ -116,13 +118,16 @@ body {
 }
 
 .footer {
-    height: 28vh;
+    min-height: 28vh;
     background: rgb(197, 191, 191);
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container {
     max-width: 1400px;
     margin: 20px auto;
+    padding: 0 2rem;
 }
 
 .footer-container .text {
@@ -143,6 +148,7 @@ body {
     max-width: 850px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-container .lista-footer li {
@@ -182,4 +188,12 @@ table tbody .table-tr td {
     min-height: 60px;  
     align-items: center; 
     display: flex;
+}
+
+
+@media(max-width: 600px){
+    .header-container #logo{
+        width: 130px;
+    }
+
 }

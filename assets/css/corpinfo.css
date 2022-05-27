@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @font-face {
-    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    src: url('../Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('../Netflix_fonts/NetflixSans-Light.otf');
+    src: url('../Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('../Netflix_fonts/NetflixSans-Regular.otf');
     font-family: 'Netflix Sans';
 }
 
@@ -42,6 +42,7 @@ h1 {
 .main-container {
     max-width: 1220px;
     margin: 30px auto 100px auto;
+    padding: 0 2rem;
 }
 
 .main-container-header {
@@ -108,3 +109,4 @@ h1 {
 .footer-container .lista-footer-container li a:hover {
     text-decoration: underline;
 }
+

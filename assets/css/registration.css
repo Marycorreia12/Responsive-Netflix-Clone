@@ -12,6 +12,7 @@ body {
 .header {
     height: 12vh;
     border-bottom: 1px solid rgb(230, 215, 215);
+    padding: 0 2rem;
 }
 
 .header-container {
@@ -25,25 +26,26 @@ body {
 
 .header-container a {
     text-decoration: none;
+    width: 180px;
 }
 
-.header-container .logo {
-    color: red;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
+.header-container a img{
+    width: 100%;
 }
 
 .header-container .botao {
     font-size: 18px;
     color: black;
     font-weight: 700;
+    white-space: nowrap;
+
 }
 
 .main {
     max-width: 800px;
     margin: 0 auto;
     min-height: 70vh;
+    padding: 0 1rem;
 }
 
 .main-container {
@@ -110,13 +112,16 @@ body {
 }
 
 .footer {
-    height: 28vh;
+    min-height: 28vh;
     background: rgb(197, 191, 191);
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container {
     max-width: 1400px;
     margin: 20px auto;
+    padding: 0 2rem;
 }
 
 .footer-container .text {
@@ -137,6 +142,7 @@ body {
     max-width: 850px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-container .lista-footer li {
@@ -164,4 +170,11 @@ body {
 
 .footer-container .language select:active {
     border-color: black;
+}
+
+@media(max-width: 600px){
+    .header-container a {
+        width: 130px;
+    }
+
 }

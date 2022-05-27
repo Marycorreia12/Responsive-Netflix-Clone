@@ -1,3 +1,11 @@
+@font-face {
+    src: url('../Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('../Netflix_fonts/NetflixSans-Light.otf');
+    src: url('../Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('../Netflix_fonts/NetflixSans-Regular.otf');
+    font-family: 'Netflix Sans';
+}
+
 .main {
     max-width: 1220px;
     margin: 30px auto 50px auto;
@@ -32,6 +40,10 @@
 .header-print:hover{
     background-color: #f0ede7;
     transition: 1s ease-in-out;
+}
+
+.main-container{
+    padding: 0 2rem;
 }
 
 .main-container-paragrafos h1 {

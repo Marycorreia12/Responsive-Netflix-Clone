@@ -11,7 +11,7 @@ body {
 
 .main-header {
     position: relative;
-    background-image: url('../img/login-the-crown_2-1500x1000.jpg');
+    background-image: url('../../images/login-the-crown_2-1500x1000-compressed.jpg');
     height: 100vh;
 }
 
@@ -21,6 +21,12 @@ body {
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width: 947px){
+    .nav-container{
+        padding: 30px;
+    }
 }
 
 .nav-container .logo {

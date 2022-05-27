@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @font-face {
-    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    src: url('../Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('../Netflix_fonts/NetflixSans-Light.otf');
+    src: url('../Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('../Netflix_fonts/NetflixSans-Regular.otf');
     font-family: 'Netflix Sans';
 }
 
@@ -26,6 +26,7 @@ span {
 .main {
     max-width: 1220px;
     margin: 40px auto 50px auto;
+    padding: 0 2rem;
 }
 
 .section_container {
@@ -93,9 +94,10 @@ span {
     list-style:none;
 }
 
-.lista h3 {
-    margin-bottom: 25px;
-    font-size: 17px;
+.lista .title {
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
 }
 
 .lista li {
@@ -104,14 +106,13 @@ span {
     align-items: center;
 }
 
-.lista li::before{
+.lista .items::before{
     content: '';
     width: 6px;
     height: 6px;
     background-color: #464141;
     border-radius: 50%;
     position: absolute;
-    
 }
 
 .lista li a {
@@ -161,6 +162,10 @@ span {
 
 }
 
+.footer-1-container .botoes_footer{
+    max-width: 1200px;
+}
+
 .footer-1-container .botoes_footer .btn {
     line-height: 45px;
     padding: 0 15px;
@@ -178,4 +183,23 @@ span {
 .footer-1-container .botoes_footer .btn:hover {
     background: #dddad5;
     transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 1040px){
+    .lista{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    .footer-1-container.container{
+        display: block;
+    }
+
+    
+.footer-1-container .botoes_footer{
+    max-width: 800px;
+    width: 100%;
+}
+    
 }

@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @font-face {
-    src: url('/assets/Netflix_fonts/NetflixSans-Bold.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Light.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Medium.otf');
-    src: url('/assets/Netflix_fonts/NetflixSans-Regular.otf');
+    src: url('../Netflix_fonts/NetflixSans-Bold.otf');
+    src: url('../Netflix_fonts/NetflixSans-Light.otf');
+    src: url('../Netflix_fonts/NetflixSans-Medium.otf');
+    src: url('../Netflix_fonts/NetflixSans-Regular.otf');
     font-family: 'Netflix Sans';
 }
 
@@ -43,7 +43,7 @@ ul{
 
 
 .header {
-    background: url('/assets/img/assitencia.jpg');
+    background: url('../../images/assitencia-compressed.jpg');
     background-position: center center;
     background-size: cover;
     height: 28vh;

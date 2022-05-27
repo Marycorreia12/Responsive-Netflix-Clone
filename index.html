@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Clone Netflix">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/css/footer_1.css">
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/footer_1.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 
     <title>Netflix Portugal</title>
 </head>
@@ -16,37 +17,37 @@
   <section class="main-header">
     <header class="main-header-nav">
       <div class="logo">
-          <img src="assets/img/LogoNetflix.png" alt="">
+          <img src="./images/LogoNetflix.png" alt="Logo Netflix">
       </div>
      
       <div class="nav_buttons">
-             <select id="selected">
-                 <option>Português</option>
-                 <option>English</option>
-             </select>
-             <button class="login" type="submit"><a href="/assets/link/login.html">Iniciar Sessão</a>
-            </button>
-            <i class="fa-solid fa-globe"></i>
+        <div class="container-selected">
+          <select class="selected">
+            <option>Português</option>
+            <option>English</option>
+        </select>
+        <i class="fa-solid fa-globe"></i>
             <i class="fa-solid fa-sort-down"></i>
+        </div>
+        <button class="login" type="submit"><a href="./assets/link/login.html">Iniciar Sessão</a></button> 
       </div>
     </header>
 
     <section class="main-header-main">
         <h1>Acesso ilimitado a séries e filmes e muito mais.</h1>
-        <h3>Veja em qualquer lugar. Cancele quando quiser.</h3>
+        <h2 class="sub-title">Veja em qualquer lugar. Cancele quando quiser.</h2>
         <p class="form-title">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</p>
 
-        <form class="form" id="form" action="/assets/link/login.html">
+        <form class="form" id="form" action="./assets/link/login.html">
           <div class="input-group">
             <input type="email" id="email" class="e-mail" placeholder="Endereço de e-mail">
             <label for="email">Endereço de e-mail</label>
-            <button class="btn" type="submit">Começar
-                  <i class="fa-solid fa-chevron-right"></i>
-            </button>
             <small class="error"></small>
           </div>
+          <button class="btn" type="submit">Começar
+                  <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </form>
-       
     </section>
   </section>
 
@@ -58,7 +59,7 @@
             <h3>Smart TVs, Playstation, Xbox, Chromecast, Apple TV, leitores de Blu-ray e muito mais.</h3>
         </div>
         <div class="image first-image">
-            <img src="assets/img/tv.png" alt="">
+            <img src="./images/tv.png" alt="_TV">
         </div>
       </div>>
     </section>
@@ -66,7 +67,7 @@
     <section class="wrapper section-2">
         <div class="container"> 
           <div class="image">
-            <img src="assets/img/mobile-0819.jpg" alt="">
+            <img src="./images/mobile-0819.jpg" alt="Mobile">
           </div>
           <div class="text">
             <h2>Transfira os seus programas para ver offline.</h2>
@@ -82,7 +83,7 @@
               <h3>Veja em streaming com acesso ilimitado a séries e filmes no seu telemóvel, tablet, computador e televisor, sem ter de pagar mais.</h3>
         </div>
         <div class="image">
-            <img src="assets/img/device-pile.png" alt="">
+            <img src="./images/device-pile.png" alt="Devise">
         </div>
       </div>>
     </section>
@@ -91,7 +92,7 @@
     <section class="wrapper section-4">
       <div class="container"> 
         <div class="image">
-          <img src="assets/img/crinacas.png" alt="">
+          <img src="./images/crinacas-compressed.jpg" alt="Criancas">
         </div>
         <div class="text">
           <h2>Crie perfis para crianças.</h2>
@@ -101,81 +102,83 @@
     </section>
 
     <section class="wrapper_faq section-5">
-          <h2>Perguntas frequentes</h2>
-          <ul>
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <ul>
+          <li class="items">
+            <button class="heading">O que é a Netflix?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="content">
+              Netflix é um serviço de streaming que oferece uma grande variedade de séries de televisão, filmes, títulos de animé, documentários e outros conteúdos premiados que podem ser vistos em milhares de dispositivos com uma ligação à internet.
+              <br>
+              <br>
+               Pode ver tudo o que quiser, quando quiser, sem anúncios. Tudo por um baixo custo mensal. Há sempre novos conteúdos para descobrir e todas as semanas são adicionados novos filmes e séries!
+             </p>   
+          </li>
+            
+          <li class="items">
+            <button class="heading">Quanto custa a Netflix?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="content">
+              Veja a Netflix no seu smartphone, tablet, Smart TV, computador ou dispositivo de streaming, tudo isto por um preço mensal fixo. Os preços dos planos variam entre 7,99 € e 15,99 € por mês. Sem custos adicionais, nem contratos.
+            </p> 
+          </li>
+          <li class="items">
+            <button class="heading">Onde posso ver a Netflix?
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="content">
+              Veja onde quiser, quando quiser, num número ilimitado de dispositivos. Inicie sessão com a sua conta Netflix para ver instantaneamente na web em netflix.com no seu PC ou em qualquer dispositivo com ligação à internet que tenha a aplicação Netflix, incluindo televisores Smart TV, smartphones, tablets, dispositivos de streaming e consolas de jogos.
+              <br>
+              <br>
+              Também pode transferir os seus filmes e séries favoritos através da aplicação para iOS, Android ou Windows 10. Transfira títulos para ver em qualquer lugar e sem uma ligação à internet. Leve a Netflix consigo para onde quiser.
+            </p> 
+          </li>
+          <li class="items">
+            <button class="heading">Como posso cancelar?               
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="content">
+              A Netflix é flexível. Sem contratos exigentes nem fidelização. Pode cancelar facilmente a sua conta online com dois cliques. Sem custos de cancelamento: ative ou cancele a sua conta em qualquer altura.
+            </p> 
+          </li>
+          <li class="items">
+            <button class="heading">O que posso ver na Netflix?<i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="content">
+              A Netflix tem uma vasta biblioteca de originais Netflix premiados, títulos de animé, filmes, documentários, séries, programas de televisão e muitos outros conteúdos. Veja os títulos que quiser, quando quiser.
+            </p> 
+          </li>
             <li class="items">
-              <button class="heading">O que é a Netflix?
+              <button class="heading">A Netflix é adequada para crianças?
                 <i class="fa-solid fa-plus"></i>
               </button>
               <p class="content">
-                Netflix é um serviço de streaming que oferece uma grande variedade de séries de televisão, filmes, títulos de animé, documentários e outros conteúdos premiados que podem ser vistos em milhares de dispositivos com uma ligação à internet.
+                A adesão à Netflix inclui um perfil Crianças para dar aos pais um melhor controlo, bem como um espaço dedicado às crianças, com filmes e séries para toda a família.
                 <br>
                 <br>
-                 Pode ver tudo o que quiser, quando quiser, sem anúncios. Tudo por um baixo custo mensal. Há sempre novos conteúdos para descobrir e todas as semanas são adicionados novos filmes e séries!
-               </p>   
+                Os perfis Crianças incluem funcionalidades de controlo parental com acesso por PIN, que lhe permitem alterar a classificação etária dos conteúdos que as suas crianças podem ver e bloquear títulos específicos.
+              </p>    
             </li>
-              
-            <li class="items">
-              <button class="heading">Quanto custa a Netflix?
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <p class="content">
-                Veja a Netflix no seu smartphone, tablet, Smart TV, computador ou dispositivo de streaming, tudo isto por um preço mensal fixo. Os preços dos planos variam entre 7,99 € e 15,99 € por mês. Sem custos adicionais, nem contratos.
-              </p> 
-            </li>
-            <li class="items">
-              <button class="heading">Onde posso ver a Netflix?
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <p class="content">
-                Veja onde quiser, quando quiser, num número ilimitado de dispositivos. Inicie sessão com a sua conta Netflix para ver instantaneamente na web em netflix.com no seu PC ou em qualquer dispositivo com ligação à internet que tenha a aplicação Netflix, incluindo televisores Smart TV, smartphones, tablets, dispositivos de streaming e consolas de jogos.
-                <br>
-                <br>
-                Também pode transferir os seus filmes e séries favoritos através da aplicação para iOS, Android ou Windows 10. Transfira títulos para ver em qualquer lugar e sem uma ligação à internet. Leve a Netflix consigo para onde quiser.
-              </p> 
-            </li>
-            <li class="items">
-              <button class="heading">Como posso cancelar?               
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <p class="content">
-                A Netflix é flexível. Sem contratos exigentes nem fidelização. Pode cancelar facilmente a sua conta online com dois cliques. Sem custos de cancelamento: ative ou cancele a sua conta em qualquer altura.
-              </p> 
-            </li>
-            <li class="items">
-              <button class="heading">O que posso ver na Netflix?
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <p class="content">
-                A Netflix tem uma vasta biblioteca de originais Netflix premiados, títulos de animé, filmes, documentários, séries, programas de televisão e muitos outros conteúdos. Veja os títulos que quiser, quando quiser.
-              </p> 
-            </li>
-              <li class="items">
-                <button class="heading">A Netflix é adequada para crianças?
-                  <i class="fa-solid fa-plus"></i>
-                </button>
-                <p class="content">
-                  A adesão à Netflix inclui um perfil Crianças para dar aos pais um melhor controlo, bem como um espaço dedicado às crianças, com filmes e séries para toda a família.
-                  <br>
-                  <br>
-                  Os perfis Crianças incluem funcionalidades de controlo parental com acesso por PIN, que lhe permitem alterar a classificação etária dos conteúdos que as suas crianças podem ver e bloquear títulos específicos.
-                </p>    
-              </li>
-            </ul>
-          <div class="form-container">
-            <p class="form-title">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</p>
+          </ul>
+        <div class="form-container">
+          <p class="form-title">Quer começar a ver? Introduza o seu e-mail para criar ou reativar a sua conta.</p>
 
-            <form class="form" id="form-2">
-              <div class="input-group">
-                <input type="email" id="email-2" class="e-mail" placeholder="Endereço de e-mail">
-                <label for="email-2">Endereço de e-mail</label>
-                <button class="btn" type="submit">Começar
-                      <i class="fa-solid fa-chevron-right"></i>
-                </button>
-                <small class="error"></small>
-              </div>
-            </form>
-          </div>
+          <form class="form" id="form-2">
+            <div class="input-group">
+              <input type="email" id="email-2" class="e-mail" placeholder="Endereço de e-mail">
+              <label for="email-2">Endereço de e-mail</label>
+              <small class="error"></small>
+            </div>
+            <button class="btn" type="submit">Começar
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+          
     </section>
   </main>
 
@@ -187,39 +190,41 @@
 
             <div class="lista-footer">
               <ul>
-                <li><a href="assets/link/perguntas.html">Perguntas frequentes</a></li>
+                <li><a href="./assets/link/perguntas.html">Perguntas frequentes</a></li>
                 <li><a href="#">Investidores</a></li>
                 <li><a href="#">Formas de ver</a></li>
-                <li><a href="assets/link/corpinfo.html">Informaçoes sobre a Empresa</a></li>
+                <li><a href="./assets/link/corpinfo.html">Informaçoes sobre a Empresa</a></li>
                 <li><a href="#">Só na Netflix</a></li>
               </ul>
               <ul>
-                <li><a href="assets/link/help.html">Centro de Assistência</a></li>
+                <li><a href="./assets/link/help.html">Centro de Assistência</a></li>
                 <li><a href="#">Bolsa de Emprego</a></li>
-                <li><a href="assets/link/termsofuse.html">Termos de Utilização</a></li>
-                <li><a href="assets/link/contactus.html">Contacte-nos</a></li>
+                <li><a href="./assets/link/termsofuse.html">Termos de Utilização</a></li>
+                <li><a href="./assets/link/contactus.html">Contacte-nos</a></li>
               </ul>
               <ul>
-                <li><a href="assets/link/login.html">Conta</a></li>
-                <li><a href="assets/link/cartoes.html">Utilizar cartões de oferta</a></li>
-                <li><a href="assets/link/privacy.html">Privacidade</a></li>
+                <li><a href="./assets/link/login.html">Conta</a></li>
+                <li><a href="./assets/link/cartoes.html">Utilizar cartões de oferta</a></li>
+                <li><a href="./assets/link/privacy.html">Privacidade</a></li>
                 <li><a href="#">Teste de Velocidade</a></li>
               </ul>
               <ul>
                 <li><a href="#">Centro de Imprensa</a></li>
                 <li><a href="#">Comprar cartões de oferta</a></li>
                 <li><a href="#">Preferências de Cookies</a></li>
-                <li><a href="assets/link/notices.html">Avisos Legais</a></li>
+                <li><a href="./assets/link/notices.html">Avisos Legais</a></li>
               </ul>
             </div>
 
             <div class="nav_buttons">
-              <select id="selected">
+              <div class="container-selected">
+                <select class="selected">
                   <option>Português</option>
                   <option>English</option>
-              </select>
-              <i class="fa-solid fa-globe"></i>
-              <i class="fa-solid fa-sort-down"></i>
+                </select>
+                <i class="fa-solid fa-globe"></i>
+                <i class="fa-solid fa-sort-down"></i>
+              </div>
           </div>
 
             <div class="footer-text">
@@ -228,7 +233,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 
     
 </body>

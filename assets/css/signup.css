@@ -12,6 +12,7 @@ body {
 .header {
     height: 12vh;
     border-bottom: 1px solid rgb(230, 215, 215);
+    padding: 0 2rem;
 }
 
 .header-container {
@@ -23,27 +24,35 @@ body {
     padding-top: 20px;
 }
 
-.header-container a {
+.header-container #logo {
+    width: 180px;
+}
+
+.header-container #logo img{
+    width: 100%;
+}
+
+
+.header-container #h3 {
     text-decoration: none;
-}
+    padding: 10px 16px;
+    color: white;
+    outline: none; 
+    background: #D6000F;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 
-.header-container .logo {
-    color: red;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-.header-container .botao {
-    font-size: 18px;
-    color: black;
-    font-weight: 700;
 }
 
 .main {
     max-width: 340px;
     margin: 150px auto;
     align-items: center;
+    padding: 0 1rem;
 }
 
 .main-container {
@@ -105,13 +114,18 @@ body {
 }
 
 .footer {
-    height: 28vh;
+    min-height: 28vh;
     background: rgb(197, 191, 191);
+    display: flex;
+    flex-direction: column;
+
 }
 
 .footer-container {
     max-width: 1400px;
     margin: 20px auto;
+    padding: 0 2rem;
+  
 }
 
 .footer-container .text {
@@ -132,6 +146,7 @@ body {
     max-width: 850px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-container .lista-footer li {
@@ -159,4 +174,12 @@ body {
 
 .footer-container .language select:active {
     border-color: black;
+}
+
+
+@media(max-width: 600px){
+    .header-container #logo {
+        width: 130px;
+    }
+
 }
